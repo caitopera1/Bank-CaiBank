@@ -75,12 +75,7 @@ class DataBase:
             return []
         keys = self.read_columns_names(table)
         dict_data = convert_to_dict(values=data[0], keys=keys)
-        return dict_data
-        
-
-db = DataBase(user="user", password="user",
-              host="caibank.mysql.database.azure.com", database="caibank",
-              ssl_ca="DigiCertGlobalRootCA.crt.pem")
+        return dict_data        
 
 
 def convert_to_dict(keys, values):
