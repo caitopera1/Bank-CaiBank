@@ -78,7 +78,7 @@ class DataBase:
         return dict_data
         
 
-db = DataBase(user="caina", password="Mabare203022@",
+db = DataBase(user="user", password="user",
               host="caibank.mysql.database.azure.com", database="caibank",
               ssl_ca="DigiCertGlobalRootCA.crt.pem")
 
