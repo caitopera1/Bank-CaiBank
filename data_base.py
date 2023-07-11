@@ -77,6 +77,10 @@ class DataBase:
         dict_data = convert_to_dict(values=data[0], keys=keys)
         return dict_data        
 
+db = DataBase(user="user", password="password",
+              host="host", database="database",
+              ssl_ca="DigiCertGlobalRootCA.crt.pem")
+
 
 def convert_to_dict(keys, values):
     dict_data = {key: value for key, value in zip(keys, values)}
